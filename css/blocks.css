@@ -1,0 +1,22 @@
+#respuesta{
+    display: flex;
+    gap: 1rem;
+}
+
+.Blocks-Two{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2rem; 
+    height: 2rem; 
+    border-radius: 10%;
+    border: 2px solid  black;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.Blocks-Two.Path {
+    background-color: yellow; /* Cambia el color de fondo a tu elección */
+    color: black; /* Cambia el color del texto a tu elección */
+}
+
+
