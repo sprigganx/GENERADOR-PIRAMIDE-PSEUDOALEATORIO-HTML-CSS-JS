@@ -4,19 +4,25 @@
 }
 
 .Blocks-Two{
+    height: 5rem;
+    width: 5rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 2rem; 
-    height: 2rem; 
-    border-radius: 10%;
-    border: 2px solid  black;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    border: 0.25rem solid rgba(151, 0, 156, 0.541);
+    border-radius: 0.8rem;
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: white;
+    position: relative;
+    transition: background-color 0.2s;
+    cursor: pointer;
 }
 
 .Blocks-Two.Path {
-    background-color: yellow; /* Cambia el color de fondo a tu elección */
-    color: black; /* Cambia el color del texto a tu elección */
+    background-color: rgba(189, 144, 247, 0.63);
+    color: black;
 }
 
 
