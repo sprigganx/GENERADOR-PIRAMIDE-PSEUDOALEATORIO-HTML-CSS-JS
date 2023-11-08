@@ -12,7 +12,12 @@ function respuestaRuta(arregloPiramide) {
         elemento2 += '<div class="Blocks-Two Path">' + caminoLegible[i] + '</div>';
     }
 
-    document.getElementById("respuesta").innerHTML = elemento2;
+    let SumaCamino = 0;
+    for (let i = 0; i < caminoLegible.length; i++) {
+      SumaCamino += caminoLegible[i];
+    }
+
+    document.getElementById("respuesta").innerHTML = elemento2 + '<div class="Block-Answer">' + ' = '+ SumaCamino + '</div>';
     console.log("Camino más pesado (valores):", caminoLegible);
     console.log("Camino más pesado (suma):", sumaCaminoMasPesado);
 }

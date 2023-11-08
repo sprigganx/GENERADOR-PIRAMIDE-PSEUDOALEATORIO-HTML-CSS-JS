@@ -19,4 +19,13 @@
     color: black; /* Cambia el color del texto a tu elección */
 }
 
+.Block-Answer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3rem; 
+    height: 2rem; 
+    border-radius: 10%;
+}
+
 
