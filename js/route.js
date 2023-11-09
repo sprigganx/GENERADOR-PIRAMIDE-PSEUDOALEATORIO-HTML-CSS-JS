@@ -23,7 +23,6 @@ function encontrarRutaMasPesada(arregloPiramide) {
     sumaCaminoMasPesado = -1;
     let finCaminoMasPesado = -1;
     
-    // Encuentra el punto final del camino más pesado.
     for (let j = 0; j < piramide[piramide.length - 1].length; j++) {
         if (dp[piramide.length - 1][j] > sumaCaminoMasPesado) {
             sumaCaminoMasPesado = dp[piramide.length - 1][j];
@@ -36,6 +35,6 @@ function encontrarRutaMasPesada(arregloPiramide) {
         caminoMasPesado.unshift(camino[i][finCaminoMasPesado]);
         finCaminoMasPesado = camino[i][finCaminoMasPesado];
     }
-    // Devolver la ruta más pesada
+    
     return caminoMasPesado;
 }

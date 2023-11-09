@@ -12,14 +12,14 @@
 }
 
 .Blocks{
-    height: 5rem;
-    width: 5rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(247, 144, 144);
+    height: 5rem;
+    width: 5rem;
     border: 0.25rem solid rgba(255, 0, 0, 0.363);
     border-radius: 0.8rem;
+    background-color: rgb(247, 144, 144);
     font-size: 1rem;
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;

@@ -91,5 +91,7 @@ main{
 
 /* Formato para el section que contiene el camino respuesta */
 section{
-    padding-top: 3.5rem;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 5rem;
 }
