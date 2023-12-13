@@ -1,5 +1,4 @@
 function colorCamino(camino) {
-    // Obtiene todos los elementos "Blocks" de la pirámide
     const blocks = document.querySelectorAll(".Blocks");
     
     // Aplica la clase "Path" solo a los elementos del camino

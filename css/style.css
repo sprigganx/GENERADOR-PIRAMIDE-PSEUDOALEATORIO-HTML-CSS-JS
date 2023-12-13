@@ -42,8 +42,31 @@ main{
 
 .Button{
     display: flex;
-    justify-content: end;
+    justify-content: space-between;
     width: 20rem;
+}
+
+.ButtonHistorial{
+    width: 5.5rem;
+    height: 2rem;
+    padding: 0.3rem;
+    border-radius: 0.3rem;
+    background-color: rgb(247, 144, 144);
+    border: unset;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.ButtonHistorial:hover{
+    background-color: rgba(189, 144, 247, 0.486);
+}
+
+a{
+    text-decoration: unset;
+    color: inherit;
+    width: 5.5rem;
+    height: 2rem;
+    padding: 0.3rem;
 }
 
 .ButtonCalculate{

@@ -24,6 +24,8 @@ function botonReiniciar() {
         encontrarRutaMasPesada(arregloPiramide);
         respuestaRuta(arregloPiramide);
         colorCamino(encontrarRutaMasPesada(arregloPiramide));
+
+        enviarAlBackend(document.getElementById("pyramid").innerHTML, document.getElementById("respuesta").innerHTML);
     } else {
         alert("El número tiene que ser mayor a 0 y menor que 51");
     }

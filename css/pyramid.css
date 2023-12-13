@@ -1,3 +1,4 @@
+/* Presets del div de la piramide */
 #pyramid {
     display: flex;
     flex-direction: column;
@@ -11,6 +12,7 @@
     gap: 1rem;
 }
 
+/* Presets de los bloques piramide y asignación de color */
 .Blocks{
     display: flex;
     justify-content: center;
@@ -31,5 +33,3 @@
     border: 0.25rem solid rgba(151, 0, 156, 0.541);
     color: black;
 }
-
-

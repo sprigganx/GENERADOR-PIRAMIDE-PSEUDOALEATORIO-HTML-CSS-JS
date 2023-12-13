@@ -1,13 +1,17 @@
+
+/* Presets del div de la respuesta */
 #respuesta{
     display: flex;
     align-items: center;
     gap: 1rem;
 }
 
+/* Presets de los bloques respuesta y asignación de color */
 .Blocks-Two{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     height: 5rem;
     width: 5rem;
     border: 0.25rem solid rgba(151, 0, 156, 0.541);
@@ -22,10 +26,12 @@
     color: black;
 }
 
+/* style de la respuesta ruta con la suma */
 .text{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     height: 1rem;
     width: 1rem;
     font-size: 1rem;
@@ -37,6 +43,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     height: 5rem;
     width: 5rem;
     border: 0.25rem solid rgba(255, 0, 0, 0.363);
@@ -47,5 +54,3 @@
     font-weight: bold;
     color: white;
 }
-
-

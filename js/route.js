@@ -35,6 +35,5 @@ function encontrarRutaMasPesada(arregloPiramide) {
         caminoMasPesado.unshift(camino[i][finCaminoMasPesado]);
         finCaminoMasPesado = camino[i][finCaminoMasPesado];
     }
-    
     return caminoMasPesado;
 }
