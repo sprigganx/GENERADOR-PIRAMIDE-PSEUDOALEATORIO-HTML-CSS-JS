@@ -5,35 +5,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Piramide</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/stylePyramid.css">
     <link rel="stylesheet" href="css/pyramid.css">
-    <link rel="stylesheet" href="css/blocks.css">
+    <link rel="stylesheet" href="css/answer.css">
+    <link rel="stylesheet" href="css/pyramidTitle.css">
 </head>
 
 <body>
-    <main>
-        <div class="Input">
-            <div>
-                <div>Tamaño</div>
-                <input type="number" class="Style" id="Cantidad">
-            </div>
-            <div class="Button">
-                <button class="ButtonHistorial"><a href="history.html">Historial</a></button>
-                <button onclick="Dibujar()" class="ButtonCalculate">Calcular</button>
-            </div>
-        </div>
+    <section id="titleSection">
+        <span>G</span><span>e</span><span>n</span><span>e</span><span>r</span><span>a</span><span>d</span><span>o</span><span>r</span>
 
-        <div id="pyramid"></div>
-
-        <div class="ButtonRestart">
-            <button onclick="botonReiniciar()" class="Design"><img src="img/restart-one.png" class="ImageRestart"/>
-        </div>
-    </main>
-    
-    <section>
-        <div id="respuesta"></div>
+        <span>d</span><span>e</span>
+            
+        <span>p</span><span>i</span><span>r</span><span>á</span><span>m</span><span>i</span><span>d</span><span>e</span><span>s</span>
     </section>
-
+    <main>
+        <section id="generatorSection">
+            <div class="Input">
+                <div class="ButtonRestart">
+                    <button onclick="botonReiniciar()" class="Design"><img src="img/restart-one.png" class="ImageRestart"/>
+                </div>
+                <div class="TextInput">
+                    <div>Tamaño</div>
+                    <input class="InputStyle" type="number" id="Cantidad">
+                </div>
+                <div class="Button">
+                    <button class="ButtonHistorial"><a href="history.html">Historial</a></button>
+                    <button onclick="Dibujar()" class="ButtonCalculate">Calcular</button>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <section id="pyramidSection">
+            <div id="pyramid"></div>
+        </section>
+        <hr>
+        <section id="answerSection">
+            <div id="answer"></div>
+        </section>
+    </main>
     <script src="js/pyramidDraw.js"></script>
     <script src="js/route.js"></script>
     <script src="js/routeAnswer.js"></script>

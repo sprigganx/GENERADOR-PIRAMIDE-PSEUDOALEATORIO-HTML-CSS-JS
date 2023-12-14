@@ -1,20 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Familjen+Grotesk&family=Montserrat:wght@100;200;400;500;600;700&family=Roboto:wght@300&family=Schibsted+Grotesk:wght@600&display=swap');
 
-/* Presets del body */
 *{
-    margin: unset;
     padding: unset;
+    margin: unset;
 }
 
 body{
-    margin: 1.5rem;
     font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #c0c0c0;
 }
 
-/* Estilo del contenido del main */
 main{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    flex-direction: column;
+    gap: 4rem;
+    margin: 3rem 10rem;
+}
+
+/* sección del generador de píramides */
+#generatorSection{
+    display: flex;
+    justify-content: center;
 }
 
 /* Estilo del input y el botón */
@@ -25,13 +35,50 @@ main{
     flex-direction: column;
     gap: 1rem;
     width: 25rem;
-    height: 10rem;
+    height: 12rem;
+    padding: 0.8rem;
     border: 2px solid rgba(0, 0, 0, 0.288);
     border-radius: 0.5rem;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    background-color: #ffffff;
 }
 
-.Style{
+/* Estilo del boton de reinicio */
+.ButtonRestart{
+    display: flex;
+    justify-content: end;
+    width: 22rem;
+}
+
+.Design{
+    background-color: rgb(247, 144, 144);
+    width: 2rem;
+    height: 2rem;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+.Design:hover{
+    background-color: rgba(189, 144, 247, 0.486);
+}
+
+.ImageRestart{
+    width: 100%; 
+    height: auto;
+}
+
+.ImageRestart:hover{
+    content: url('../img/restart-two.png');
+}
+
+/* Presets y estilo del texto e input del generador */
+.TextInput{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.InputStyle{
     border-radius: 0.3rem;
     height: 1.5rem;
     width: 20rem;
@@ -40,6 +87,7 @@ main{
     font-family: 'Montserrat', sans-serif;
 }
 
+/* Presets y estilo de botones historial y calcular del generador */
 .Button{
     display: flex;
     justify-content: space-between;
@@ -66,7 +114,7 @@ a{
     color: inherit;
     width: 5.5rem;
     height: 2rem;
-    padding: 0.3rem;
+    padding: 0.45 0.8rem;
 }
 
 .ButtonCalculate{
@@ -84,37 +132,8 @@ a{
     background-color: rgba(189, 144, 247, 0.486);
 }
 
-/* Estilo del boton de reinicio */
-.ButtonRestart{
-    display: flex;
-    justify-content: end;
-    width: 10rem;
-}
-
-.Design{
-    background-color: rgb(247, 144, 144);
-    width: 3rem;
-    height: 3rem;
-    border-radius: 100%;
-    cursor: pointer;
-}
-
-.Design:hover{
-    background-color: rgba(189, 144, 247, 0.486);
-}
-
-.ImageRestart{
-    width: 100%; 
-    height: auto;
-}
-
-.ImageRestart:hover{
-    content: url('../img/restart-two.png');
-}
-
 /* Formato para el section que contiene el camino respuesta */
-section{
+#answerSection{
     display: flex;
-    justify-content: space-between;
-    padding-top: 5rem;
+    justify-content: center;
 }

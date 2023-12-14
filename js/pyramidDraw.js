@@ -26,19 +26,19 @@ function Dibujar() {
         colorCamino(encontrarRutaMasPesada(arregloPiramide));
 
         // Enviar datos al backend
-        enviarAlBackend(document.getElementById("pyramid").innerHTML, document.getElementById("respuesta").innerHTML);
+        enviarAlBackend(document.getElementById("pyramid").innerHTML, document.getElementById("answer").innerHTML);
     } else {
         alert("El número tiene que ser mayor a 0 y menor que 51");
     }
 }
 
-function enviarAlBackend(pyramidContent, respuestaContent) {
+function enviarAlBackend(pyramidContent, answerContent) {
     const pyramidData = {
         pyramid: pyramidContent
     };
 
-    const respuestaData = {
-        respuesta: respuestaContent
+    const answerData = {
+        answer: answerContent
     };
 
     // Realizar la solicitud al backend para pyramid
@@ -54,14 +54,14 @@ function enviarAlBackend(pyramidContent, respuestaContent) {
     .catch(error => console.error('Error al enviar datos al backend para pyramid:', error));
 
     // Realizar la solicitud al backend para respuesta
-    fetch('http://localhost:4567/piramides/respuesta', {
+    fetch('http://localhost:4567/piramides/answer', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
         },
-        body: JSON.stringify(respuestaData)
+        body: JSON.stringify(answerData)
     })
     .then(response => response.json())
-    .then(data => console.log('Respuesta del backend para respuesta:', data))
-    .catch(error => console.error('Error al enviar datos al backend para respuesta:', error));
+    .then(data => console.log('Respuesta del backend para answer:', data))
+    .catch(error => console.error('Error al enviar datos al backend para answer:', error));
 }

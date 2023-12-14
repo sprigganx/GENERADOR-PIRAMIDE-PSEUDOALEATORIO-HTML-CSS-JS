@@ -1,0 +1,72 @@
+.Smoke{
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    background-color: white;
+    animation: animate 1s linear;
+    animation-delay: 0.06s;
+}
+
+.Smoke span{
+    position: relative;
+    font-weight: bold;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    font-size: 2rem;
+    animation: animate 1s linear ;
+}
+
+.Smoke span:nth-child(1){
+    animation-delay: 0.1s;
+}
+
+.Smoke span:nth-child(2){
+    animation-delay: 0.2s;
+}
+
+.Smoke span:nth-child(3){
+    animation-delay: 0.3s;
+}
+
+.Smoke span:nth-child(4){
+    animation-delay: 0.4s;
+}
+
+.Smoke span:nth-child(5){
+    animation-delay: 0.5s;
+}
+
+.Smoke span:nth-child(6){
+    animation-delay: 0.6s;
+}
+
+.Smoke span:nth-child(7){
+    animation-delay: 0.7s;
+}
+
+.Smoke span:nth-child(8){
+    animation-delay: 0.8s;
+}
+
+.Smoke span:nth-child(9){
+    animation-delay: 0.9s;
+}
+
+
+@keyframes animate {
+    0%{
+        filter: blur(0);
+    }
+
+    40%{
+        filter: blur(20px);
+    }
+
+    80%{
+        filter: blur(20px);
+    }
+
+    100%{
+        filter: blur(20px);
+    }
+}

@@ -21,8 +21,8 @@ public class App {
             // Obtener datos del cuerpo de la solicitud
             JSONObject json = new JSONObject(req.body());
             // Acceder a los datos de pyramid
-            String pyramid = json.getString("pyramid");
-            almacenarPiramide(pyramid);
+            String piramide = json.getString("pyramid");
+            almacenarPiramide(piramide);
 
             // Enviar respuesta al frontend(Para ver si sirve xd)
             //Actu: si funcionó xd
@@ -31,11 +31,11 @@ public class App {
             return responseJson.toString();
         });
 
-        post("/piramides/respuesta", (req, res) -> {
+        post("/piramides/answer", (req, res) -> {
             res.type("application/json");
             JSONObject json = new JSONObject(req.body());
 
-            String respuesta = json.getString("respuesta");
+            String respuesta = json.getString("answer");
             almacenarRuta(respuesta);
 
             JSONObject responseJson = new JSONObject();
